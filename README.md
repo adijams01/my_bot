@@ -10,4 +10,31 @@
 * odometry issues with foxy
 #### Worked Fine with galactic (not on V.M.)
 
-
+## Regular Commands
+```
+colcon build --symlink-install
+```
+```
+source install/setup.bash
+```
+```
+source /opt/ros/foxy/setup.bash
+```
+```
+ros2 launch my_bot rsp.launch.py
+```
+```
+rviz2
+```
+```
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
+```
+```
+ros2 launch my_bot launch_sim.launch.py
+```
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
+```
