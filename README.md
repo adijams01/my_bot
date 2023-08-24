@@ -42,6 +42,9 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
 ros2 launch slam_toolbox online_async_launch.py params_file:=./my_bot/config/mapper_params_online_async.yaml use_sim_time:=true
 ```
 ```
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+```
+```
 killall gzserver
 ```
 ```
