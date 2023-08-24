@@ -45,6 +45,9 @@ ros2 launch slam_toolbox online_async_launch.py params_file:=./my_bot/config/map
 ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
 ```
 ```
+ros2 run twist_mux twist_mux --ros-args --params-file ./my_bot/config/twist_mux.yaml
+```
+```
 killall gzserver
 ```
 ```
