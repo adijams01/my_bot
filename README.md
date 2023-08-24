@@ -54,6 +54,12 @@ ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yam
 ros2 run nav2_util lifecycle_bringup map_server
 ```
 ```
+ros2 run nav2_util lifecycle_bringup amcl
+```
+```
+ros2 run nav2 amcl amcl --ros-args -p use_sim_time:=true
+```
+```
 killall gzserver
 ```
 ```
