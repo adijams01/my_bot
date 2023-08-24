@@ -48,6 +48,12 @@ ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
 ros2 run twist_mux twist_mux --ros-args --params-file ./my_bot/config/twist_mux.yaml
 ```
 ```
+ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=my_map_save.yaml -p use_sim_time:=true
+```
+```
+ros2 run nav2_util lifecycle_bringup map_server
+```
+```
 killall gzserver
 ```
 ```
